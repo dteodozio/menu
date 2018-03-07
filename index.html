@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Sistema de automação de check-list, cheklist, check-list">
+    <meta name="author" content="Jacson Milomem">
+    <meta name="generator" content="Beyond Systems">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./libraries/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="./libraries/css/checklist/checklist.css" rel="stylesheet">
+</head>
+<body>
+
+    <div id="wrapper" class="toggled">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <div class="row">
+                        <div class="col-8">
+                            <img src="libraries/svg/task_green_16.svg"> Check-List
+                        </div>
+                        <div class="col-2">
+                            <!-- <button type="button" class="close" data-dismiss="alert" aria-label="Close">-->
+                            <a href="#" class="fecha"><img src="libraries/svg/x_with_16.svg"></a>
+                            <!-- </button> -->
+                        </div>
+                    </div>
+                    <li class="nav-item">
+                       <a class="nav-link nav-link-collapse  active collapsed" data-toggle="collapse" href="#collapselink">
+                         <i class="fa fa-dashboard"></i>
+                         <span>Dashboard</span>
+                       </a>
+                       <ul class="sidenav-second-level collapse" id="collapselink">
+                         <li>
+                           <a href="#"><i class="fa fa-bar-chart-o"></i>  link 1</a>
+                         </li>
+                         <li>
+                           <a href="#"><i class="fa fa-check-square-o"></i>  link 2</a>
+                         </li>
+                         <li>
+                           <a href="#"><i class="fa fa-car"></i>  link 3</a>
+                         </li>
+                       </ul>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link nav-link-collapse  active collapsed" data-toggle="collapse" href="#collapselink2">
+                          <i class="fa fa-check-square-o"></i>
+                          <span>CheckList</span>
+                        </a>
+                        <ul class="sidenav-second-level collapse" id="collapselink2">
+                          <li>
+                            <a href="#"><i class="fa fa-bar-chart-o"></i>  link</a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fa fa-check-square-o"></i>  link</a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fa fa-car"></i>  link</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                         <a class="nav-link nav-link-collapse  active collapsed" data-toggle="collapse" href="#collapselink3">
+                           <i class="fa fa-line-chart"></i>
+                           <span>Ações</span>
+                         </a>
+                         <ul class="sidenav-second-level collapse" id="collapselink3">
+                           <li>
+                             <a href="#"><i class="fa fa-bar-chart-o"></i>  link</a>
+                           </li>
+                           <li>
+                             <a href="#"><i class="fa fa-check-square-o"></i>  link</a>
+                           </li>
+                           <li>
+                             <a href="#"><i class="fa fa-car"></i>  link</a>
+                           </li>
+                         </ul>
+                       </li>
+                   </div>
+        <!-- /#sidebar-wrapper -->
+        <!--<div class="nav-top">
+            teste
+        </div>
+        <div class="nav-info">
+            teste
+        </div>-->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light nav-top">
+            <a class="navbar-brand" href="#"><span class="navbar-toggler-icon"></span></a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <button class="btn btn-sm btn-light" type="button">Dashboard</button>
+                    <button class="btn btn-sm btn-light" type="button">CheckList</button>
+                    <button class="btn btn-sm btn-light" type="button">Ações</button>
+                </div>
+            </div>
+
+            <div class="content">
+              <!--butão mensagem-->
+              <div class="iconmes">
+                <div class="dropdown">
+                  <a href="#"><i class="fa fa-envelope fa-2x" style="color: #251f1f;"></i></a>
+                  <div class="dropdown-content">
+                    <a href="#">teste</a>
+                    <a href="#">teste</a>
+                    <a href="#">teste</a>
+                  </div>
+                </div>
+              </div>
+              <!--butão usuario-->
+              <div class="iconusuario">
+                <div class="dropdown">
+                  <a href="#"><i class=" fa fa-user-circle-o fa-2x" style="color: #251f1f;"></i></a>
+                  <div class="dropdown-content">
+                    <a href="#"><i class="fa fa-user "></i> Usuário</a>
+                    <a href="#"><i class="fa fa-wrench"></i> configurações</a>
+                    <a href="login.html"><i class="fa fa-sign-out"></i> sair</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </nav>
+        <!--crumb-menu-->
+        <nav aria-label="breadcrumb">
+          <ol class="crumb-menu">
+            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+          </ol>
+        </nav>
+        <!--<nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <span class="navbar-toggler-icon"></span>
+                <form class="form-inline">
+                    <span class="navbar-toggler-icon"></span>
+                    <button class="btn btn-sm btn-outline-success" type="button">Dashboard</button>
+                    <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button>
+                </form>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                        <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button>
+
+            </div>
+            <form class="form-inline">
+                <button class="btn btn-outline-success" type="button">Main button</button>
+                <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button>
+            </form>
+        </nav> -->
+        <!--<nav class="navbar navbar-light bg-light nav-top">
+            teste
+        </nav> -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+              <div class="card">
+                <div class="card-menu">
+                  <h1>Simple Sidebar</h1>
+                  <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+                  <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+                </div>
+              </div>
+                <!--<a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>-->
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="libraries/js/jquery/jquery-3.3.1.min.js"></script>
+    <script src="libraries/js/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $(document).ready(function() {
+            $('#menu-toggle').hide();
+            $('.navbar-toggler-icon').hide();
+        });
+        /*$("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+            $('#menu-toggle').hide();
+            $('.navbar-toggler-icon').hide();
+        });*/
+        $(".fecha").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+            $('#menu-toggle').show();
+            $('.navbar-toggler-icon').show();
+        });
+        $(".navbar-toggler-icon").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+            $('#menu-toggle').hide();
+            $('.navbar-toggler-icon').hide();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+body
+{
+    background: #e5e6e6;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/**
+* Controle Geral wrapper
+*/
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+  padding-left: 250px;
+}
+
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #222b37;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  width: 250px;
+}
+
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: -250px;
+}
+
+/**
+* Sidebar Styles
+*/
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+
+}
+
+.nav-item ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav-item a  {
+  font-size: 14px;
+  background-color: #7575752e;
+  color: #b2b5b9;
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  border-bottom: 0px solid transparent;
+}
+
+.sidenav-second-level a:hover {
+  background-color: #fffdfd30;
+  border-left: 3px solid #2de805;
+  color: #ffffffa6;
+}
+
+.nav-item .active:hover{
+  color: white;
+
+}
+
+.nav-item a.active {
+  background-color: #222b37;
+  color: #ffffffa6;
+  border-left: 3px solid #2de805;
+}
+
+
+/*
+*logo menu
+*/
+.sidebar-nav>.sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px;
+  color: #ffffff;
+}
+
+
+
+
+
+@media(min-width:768px) {
+  #wrapper {
+    padding-left: 0;
+  }
+  #wrapper.toggled {
+    padding-left: 250px;
+  }
+  #sidebar-wrapper {
+    width: 0;
+  }
+  #wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+  }
+  #page-content-wrapper {
+    padding: 20px;
+    position: relative;
+  }
+  #wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0;
+  }
+}
+
+.nav-top{
+    height: 60px;
+    -webkit-box-shadow: 6px 0px 10px #999;
+	   -moz-box-shadow: 6px 0px 10px #999;
+	        box-shadow: 3px 3px 10px #999;
+}
+
+/*
+* icone mensagem
+*/
+.iconmes {
+  position: relative;
+  display: inline-block;
+  padding: 0 3px;
+  height: 29px;
+  left: -9px;
+  font-size: 11px;
+  line-height: 36px;
+  border-radius: 30px;
+  background-color: #f1f1f1;
+
+}
+
+.iconmes:hover {
+  background-color: #e4e7ea;
+}
+
+/*
+* icone usuario
+*/
+.iconusuario {
+  display: inline-block;
+  padding: 0 3px;
+  height: 29px;
+  font-size: 11px;
+  line-height: 36px;
+  border-radius: 30px;
+  background-color: #f1f1f1;
+
+}
+
+.iconusuario:hover {
+  background-color: #e4e7ea;
+}
+
+/*
+dropdown botão mensagem
+*/
+
+
+.iconmes .dropdown-content {
+    display: none;
+    position: absolute;
+    right: -22px;
+    background-color: #f9f9f9;
+    min-width: 342px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.iconmes .dropdown-content a {
+  color: black;
+  padding: 0px 30px;
+  text-decoration: none;
+  display: block;
+
+}
+
+.iconmes .dropdown-content a:hover {background-color: #f1f1f1}
+
+.iconmes .dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+.iconmes .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/*
+dropdown botão usuario
+*/
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: -22px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 0px 30px;
+  text-decoration: none;
+  display: block;
+
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/*
+card-header Dashboard
+*/
+  .card-menu {
+      background-color: white;
+      padding: 1.25rem;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/*
+crumb-menu Dashboard
+*/
+.crumb-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: .75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    border-radius: .25rem;
+}
